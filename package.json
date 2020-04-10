@@ -1,0 +1,16 @@
+{
+  "name": "Nicoloader",
+  "version": "1.0.0",
+  "description": "NicoNicoDownloader",
+  "main": "main.js",
+  "author": "minato86",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^6.0.0",
+    "electron-packager": "^14.0.4",
+    "ffmpeg-static-electron": "^2.0.1"
+  },
+  "scripts": {
+    "start": "electron ."
+  }
+}

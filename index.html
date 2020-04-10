@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nicoloader - NicoNico Downloader</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:700&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Noto Sans JP', sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="mt-5">Nicoloader</h1>
+            <p>ニコニコ動画のm3u8リンクをmp4に変換するソフト</p>
+            <div class="form-group">
+                <label for="nico_url">URLリンク</label>
+                <input class="form-control" id="nico_url" aria-describedby="nico" placeholder="ここに入力">
+                <small id="nico" class="form-text text-muted">システムメッセージから取得したリンクを入力してください。Ctrl+Vで貼り付け</small>
+                <label class="mt-3" for="filepath">ファイル名</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="filepath" aria-describedby="filepath" placeholder="ここに入力" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">.mp4</span>
+                    </div>
+                </div>
+                <small id="filepath_small" class="form-text text-muted">ファイル名を.mp4に続く形で入力してください。</small>
+            </div>
+            <button class="btn btn-primary mb-3" onclick="checkText()">ダウンロード</button>
+            <button class="btn btn-primary mb-3" onclick="openweb()">リンクの取得方法</button><br>
+            <a href="#" onclick="openinfo()">このソフトについて</a>
+            <script src="./render.js"></script>
+        </div>
+    </body>
+</html>
