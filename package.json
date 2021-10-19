@@ -6,7 +6,7 @@
   "author": "minato86",
   "license": "MIT",
   "dependencies": {
-    "electron": "^13.0.0",
+    "electron": "^15.0.0",
     "electron-packager": "^15.0.0",
     "ffmpeg-static-electron": "^2.0.1"
   },
