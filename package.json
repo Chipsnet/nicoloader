@@ -7,7 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "electron": "^21.0.0",
-    "electron-packager": "^16.0.0",
+    "electron-packager": "^17.0.0",
     "ffmpeg-static-electron": "^2.0.1"
   },
   "scripts": {
